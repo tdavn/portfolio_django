@@ -1,0 +1,92 @@
+{% extends 'blog/blg_base.html' %}
+{% block title %} {{ post.title_tag }} {% endblock %}
+{% block content %}
+{% load static %}
+<div class="s-content content">
+  <main class="row content__page">
+    <article class="column large-full entry format-standard">
+      {% if post.header_image %}
+          <div class="media-wrap entry__media">
+            <div class="entry__post-thumb">
+              <img src="{{ post.header_image.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;">
+                <!-- <img src="images/thumbs/single/standard/standard-1000.jpg"
+                     srcset="images/thumbs/single/standard/standard-2000.jpg 2000w,
+                             images/thumbs/single/standard/standard-1000.jpg 1000w,
+                             images/thumbs/single/standard/standard-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt=""> -->
+            </div>
+          </div>
+      {% endif %}
+          <div class="content__page-header entry__header">
+            <h1 class="display-1 entry__title">
+            {{ post.title }}
+            </h1>
+            <ul class="entry__header-meta">
+                <li class="author">By <a href="#0">{{post.author.first_name }} {{post.author.last_name }}</a></li>
+                <li class="date">{{ post.post_date }}</li>
+                {% if user.is_authenticated %}
+                <li>
+                  <a href="{% url 'blg_edit' post.pk %}">(Edit)</a> |
+                  <a href="{% url 'blg_delete' post.pk %}">(Delete)</a>
+                </li>
+                {% endif %}
+
+                <li class="cat-links">
+                    <a href="{% url 'blg_category' post.category %}">{{ post.category }}</a>
+                </li>
+            </ul>
+          </div> <!-- end entry__header -->
+
+          <div class="entry__content">
+            {{ post.body | safe }}
+          </div> <!-- end entry content -->
+
+    </article> <!-- end column large-full entry-->
+
+    <div class="comments-wrap">
+
+      <div class="column large-12 comment-respond">
+          <h3 class="h2">Comments appear here </h3>
+      </div>
+
+      <div class="column large-12 comment-respond">
+          <!-- START respond -->
+          <div id="respond">
+
+              <h3 class="h2">Add Comment <span>Your email address will not be published</span></h3>
+
+              <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off">
+                  <fieldset>
+
+                      <div class="form-field">
+                          <input name="cName" id="cName" class="full-width" placeholder="Your Name" value="" type="text">
+                      </div>
+
+                      <div class="form-field">
+                          <input name="cEmail" id="cEmail" class="full-width" placeholder="Your Email" value="" type="text">
+                      </div>
+
+                      <div class="form-field">
+                          <input name="cWebsite" id="cWebsite" class="full-width" placeholder="Website" value="" type="text">
+                      </div>
+
+                      <div class="message form-field">
+                          <textarea name="cMessage" id="cMessage" class="full-width" placeholder="Your Message"></textarea>
+                      </div>
+
+                      <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large full-width" value="Add Comment" type="submit">
+
+                  </fieldset>
+              </form> <!-- end form -->
+
+          </div>
+          <!-- END respond-->
+
+      </div> <!-- end comment-respond -->
+
+
+    </div> <!-- end comments-wrap -->
+
+  </main>
+</div> <!-- end s-content -->
+
+{% endblock %}

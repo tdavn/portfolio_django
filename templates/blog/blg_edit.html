@@ -1,0 +1,30 @@
+{% extends 'blog/blg_base.html' %}
+{% block title %} Edit the blog post {% endblock %}
+{% block content %}
+
+<div class="s-content content">
+  <main class="row content__page">
+    <article class="column large-full entry format-standard">
+
+      {% if user.is_authenticated %}
+      <h1> Editing blog .... </h1>
+      <br/>
+      <div class="form-group">
+        <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}  <!-- cross site resquest forgery protection, see more on django doc -->
+          {{ form.media }}
+          {{ form.as_p }}    <!-- can change as_table, as_ul ... -->
+          <button class="btn btn-secondary">Update</button>
+        </form>
+      <!-- need to define a methods in models to point this post to -->
+      </div>
+      {% else %}
+      You need to login or register to edit a post.
+      {% endif %}
+    </article> <!-- end column large-full entry-->
+
+
+  </main>
+</div> <!-- end s-content -->
+
+{% endblock %}

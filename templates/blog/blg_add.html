@@ -1,0 +1,32 @@
+{% extends 'blog/blg_base.html' %}
+{% block title %} Add a new blog post {% endblock %}
+{% block content %}
+
+<div class="s-content content">
+  <main class="row content__page">
+        <section class="column large-full entry format-standard">
+          {% if user.is_authenticated %}
+            <div class="content__page-header">
+              <h1 class="display-1">
+                Add a Blog Post
+              </h1>
+            </div> <!-- end content__page-header -->
+
+            <br/>
+            <form method="POST" id="contactForm" enctype="multipart/form-data">
+              <fieldset>
+                {% csrf_token %}  <!-- cross site resquest forgery protection, see more on django doc -->
+                {{ form.media }}
+                {{ form.as_p }}    <!-- can change as_table, as_ul ... -->
+                <button class="btn btn--primary btn-wide">Post</button>
+                <!-- need to define a methods in models to point this post to -->
+              </fieldset>
+            </form>
+          {% else %}
+            <h3>You need to login or register to add a post.</h3>
+          {% endif %}
+        </section>
+  </main>
+</div> <!-- end s-content -->
+
+{% endblock %}
