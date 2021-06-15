@@ -8,4 +8,4 @@ hompage/migrations/
 
 db.sqlite3
 
-portfolio/__pycache__/
+portfolio/*
