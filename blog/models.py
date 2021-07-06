@@ -27,7 +27,7 @@ class BlgPost(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.ForeignKey(BlgCategory, on_delete=models.CASCADE)
     snippet = models.CharField(max_length=400)
-    body = RichTextUploadingField(blank=True, null=True)
+    body = RichTextUploadingField(blank=True, null=True, config_name='special',)
     post_date = models.DateField(auto_now_add=True)
     # likes = models.ManyToManyField(User, related_name='blog_posts')
 

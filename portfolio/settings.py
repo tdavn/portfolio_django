@@ -45,13 +45,9 @@ INSTALLED_APPS = [
 
 CKEDITOR_CONFIGS = {
     'default': {
-        'toolbar': 'Custom',
-        'height': 500,
-        'toolbar_Custom': [["Format", "Bold", "Italic", "Underline", "Strike"],
-                ['NumberedList', 'BulletedList', "Indent", "Outdent", 'JustifyLeft', 'JustifyCenter',
-                 'JustifyRight', 'JustifyBlock', 'CodeSnippet'],
-                ["Image", "Table", "Link", "Unlink", "Anchor", "SectionLink", "Subscript", "Superscript"], ['Undo', 'Redo'], ["Source"],
-                ["Maximize"]],
+        'toolbar': 'none',
+
+    },
     'special': {
         'toolbar': 'Special',
         'toolbar_Special': [["Format", "Bold", "Italic", "Underline", "Strike"],
@@ -61,7 +57,6 @@ CKEDITOR_CONFIGS = {
                 ["Maximize"]
 
         ], 'extraPlugins': 'codesnippet',
-    }
     }
 }
 

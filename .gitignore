@@ -8,4 +8,4 @@ hompage/migrations/
 
 *.sqlite3
 
-portfolio/*
+portfolio/
