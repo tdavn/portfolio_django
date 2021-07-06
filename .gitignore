@@ -1,0 +1,11 @@
+blog/__pycache__/
+
+blog/migrations/
+
+hompage/__pycache__/
+
+hompage/migrations/
+
+*.sqlite3
+
+portfolio/
