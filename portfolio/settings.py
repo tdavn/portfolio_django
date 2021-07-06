@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*a)*6_27@o(a0trequong0wpq(e=31%t0uw2_fi^&d=(cqe@fm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tdavn.pythonanywhere.com']
 
 
 # Application definition
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': 'none',
-        
+
     },
     'special': {
         'toolbar': 'Special',
@@ -56,7 +56,7 @@ CKEDITOR_CONFIGS = {
                 ["Image", "Table", "Link", "Unlink", "Anchor", "SectionLink", "Subscript", "Superscript"], ['Undo', 'Redo'], ["Source"],
                 ["Maximize"]
 
-        ], 'extraPlugins': 'codesnippet', 
+        ], 'extraPlugins': 'codesnippet',
     }
 }
 
