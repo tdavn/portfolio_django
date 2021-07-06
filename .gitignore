@@ -6,6 +6,6 @@ hompage/__pycache__/
 
 hompage/migrations/
 
-db.sqlite3
+*.sqlite3
 
 portfolio/*
