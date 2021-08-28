@@ -14,7 +14,7 @@ class BlgHomeView(ListView):
     template_name = 'blog/blg_index.html'
     ordering = ['-post_date']
     context_object_name = 'posts'
-    paginate_by = 3
+    paginate_by = 7
     queryset = BlgPost.objects.all()
 
     def get_context_data(self, *args, **kwargs):

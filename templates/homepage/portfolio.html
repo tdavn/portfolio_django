@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+{% load static %}
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Portfolio - Trinh DA</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="{% static 'homepage/css/base.css' %}">
+   <link rel="stylesheet" href="{% static 'homepage/css/vendor.css' %}">
+   <link rel="stylesheet" href="{% static 'homepage/css/main.css' %}">
+
+   <style type="text/css" media="screen">
+   	#styles {
+   		background: white;
+   		padding-top: 12rem;
+   		padding-bottom: 12rem;
+   	}
+   </style>
+
+   <!-- script
+   ================================================== -->
+   <script src="{% static 'homepage/js/modernizr.js' %}"></script>
+ 	 <script src="{% static 'homepage/js/pace.min.js' %}"></script>
+
+   <!-- favicons
+	================================================== -->
+  <link rel="shortcut icon" href="{% static 'homepage/favicon.ico' %}" type="image/x-icon">
+	<link rel="icon" href="{% static 'homepage/favicon.ico' %}" type="image/x-icon">
+
+</head>
+
+
+<body id="top">
+
+	<!-- header
+   ================================================== -->
+   <header>
+
+   	<div class="header-logo">
+	      <a href="{% url 'homepage:home_id' %}">Trinh DA</a>
+	   </div>
+
+		<a id="header-menu-trigger" href="#0">
+		 	<span class="header-menu-text">Menu</span>
+		  	<span class="header-menu-icon"></span>
+		</a>
+
+		<nav id="menu-nav-wrap">
+
+			<a href="#0" class="close-button" title="close"><span>Close</span></a>
+
+	   	<h3>Trinh DA</h3>
+
+			<ul class="nav-list">
+				<li class="current"><a href="{% url 'homepage:home_id' %}" title="">Home</a></li>
+				<li><a href="{% url 'blg_index' %}" title="">Blog</a></li>
+        <li class="has-children">
+            <a href="{% url 'homepage:portfolio1' %}" title="">Portfolio</a>
+            <ul class="sub-menu">
+            <li><a href="{% url 'homepage:ing4' %}">ING4</a></li>
+            <li><a href="{% url 'homepage:nanobody' %}">Nanobody</a></li>
+            <li><a href="{% url 'homepage:trichostatin' %}">Cancer drug</a></li>
+            <li><a href="{% url 'homepage:netosis' %}">NETosis</a></li>
+            <li><a href="{% url 'homepage:ggtpase3' %}">GGTase</a></li>
+            <li><a href="{% url 'homepage:ralgap' %}">Ral GAP</a></li>
+            </ul>
+        </li>
+			</ul>
+
+			<ul class="header-social-list">
+        <li>
+         <a href="https://twitter.com/tdamcb"><i class="fa fa-twitter"></i></a>
+        </li>
+	    </ul>
+
+		</nav>  <!-- end #menu-nav-wrap -->
+
+	</header> <!-- end header -->
+
+
+   <!-- home
+   ================================================== -->
+   <section id="home_portfolio">
+
+   	<div class="overlay"></div><div class="gradient-overlay"></div>
+   </section> <!-- end home -->
+
+   <!-- styles
+   ================================================== -->
+	<section id="styles">
+
+		<div class="row narrow add-bottom">
+
+   		<div class="col-twelve tab-full">
+
+   			<h1 class="display-1">Portfolio information</h1>
+
+   			<p class="lead drop-cap">My main career interests expand over several fields of biology, including genetics, molecular and cellular biology, and carcinogenesis.
+          Recently, I have switched gradually to study systems biology, which aims to deal with life science problems in a big picture, a systemic approach. I found that AI/
+          ML models provide great tools to tackle the tasks of mordern biology, especially complex systems like biomolecular metworks.</p>
+
+   		</div>
+
+    </div>
+
+     	<div class="row">
+
+     		<div class="col-six tab-full">
+
+		     	<h3>Inhibitor of Growth 4 (ING4) protein positively regulates rRNA synthesis</h3>
+          <p><img src="{% static 'homepage/images/Ing4-Fig2.png' %}"></p>
+		      <p><a href="#"><img width="120" height="120" class="pull-left" alt="sample-image" src="{% static 'homepage/images/sample-image.jpg' %}"></a>
+		  		We found that the majority of ING4 locate in the nucleolus, the cellular organell is responsible for rRNA biosynthesis. Using techniques of gene editing, pull-down
+           assay, flourescent laser microscopy ect. we discovered that ING4 expression was associated with specific histon modifications, thereby favored the synthesis process of rRNA at rDNA regions. <a href="{% url 'homepage:ing4' %}">See details</a> ...
+	 			</p>
+
+        <h3>A SNARE geranylgeranyltransferase essential for the organization of the Golgi apparatus</h3>
+        <p><img src="{% static 'homepage/images/ykt6.jpg' %}"></p>
+        <p class="drop-cap">Protein prenylation is essential for many cellular processes including signal transduction, cytoskeletal reorganization, and membrane trafficking. Here, we identify a novel type of protein prenyltransferase, which we named geranylgeranyltransferase type-III (GGTase-III). GGTase-III consists of prenyltransferase alpha subunit repeat containing 1 (PTAR1) and the β subunit of RabGGTase. <a href="{% url 'homepage:ggtpase3' %}">See details</a> ...
+       </p>
+
+	      </div>
+
+	      <div class="col-six tab-full">
+
+	         <h3>Trichostatin A - cell cycle block - apoptosis</h3>
+           <p><img src="{% static 'homepage/images/tsa.png' %}"></p>
+		      <p class="drop-cap">Oral squamous cancer carcinoma (OSCC) is a quite popular type of cancers. We showed that Trichostatin A (TSA), a histon-deacetylation inhibitor, was able to prevent the development of
+            OSCC via blocking the cancerous cells at G2/M of cell cycle transition, inducing programed cell death. <a href="{% url 'homepage:ing4' %}">See details</a> ...
+				</p>
+        <h3>Prostaglandin E2 inhibits neutrophil extracellular trap formation through production of cyclic AMP</h3>
+        <p><img src="{% static 'homepage/images/netosis.png' %}"></p>
+        <p class="drop-cap">Upon stimulation, neutrophils release their nuclear contents called neutrophil extracellular traps (NETs), which contain unfolded chromatin and lysosomal enzymes. NETs have been demonstrated to play a critical role in host defence, although the role of PGE2 , a bioactive substance generated in inflammatory tissues, in the formation of NETs remains unclear. <a href="{% url 'homepage:netosis' %}">See details</a> ...
+       </p>
+
+			</div>
+
+		</div> <!-- end row -->
+
+		<div class="row add-bottom">
+	      <div class="col-twelve">
+
+	      	<h3>Full list of publications</h3>
+          <ol>
+ 				   <li><mark>Trinh DA</mark>, Shirakawa R, Kimura T, Sakata N, Goto K, Horiuchi H. <strong>Inhibitor of Growth 4 (ING4) is a positive regulator of rRNA synthesis.</strong> <em>Sci Rep. 2019 Nov 21;9(1):17235. doi: 10.1038/s41598-019-53767-1.</em></li>
+ 				   <li>Yoshimachi S, Shirakawa R, Cao M, <mark>Trinh DA</mark>, Gao P, Sakata N, Miyazaki K, Goto K, Miura T, Ariake K, Maeda S, Masuda K, Ishida M, Ohtsuka H, Unno M, Horiuchi H. <strong>Ral GTPase–activating protein regulates the malignancy of pancreatic ductal adenocarcinoma.</strong> <em>Cancer Sci. 2021 Aug;112(8):3064-3073. doi: 10.1111/cas.14970. Epub 2021 Jun 15.</em></li>
+ 				   <li>Shirakawa R, Goto-Ito S, Goto K, Wakayama S, Kubo H, Sakata N, <mark>Trinh DA</mark>, Yamagata A, Sato Y, Masumoto H, Cheng J, Fujimoto T, Fukai S, Horiuchi H. <strong>A SNARE geranylgeranyltransferase essential for the organization of the Golgi apparatus.</strong> <em>EMBO J. 2020 Apr 15;39(8):e104120. doi: 10.15252/embj.2019104120. Epub 2020 Mar 3.</em>
+ 					</li>
+ 					<li>Sakata N, Shirakawa R, Goto K, <mark>Trinh DA</mark>, Horiuchi H. <strong>Double prenylation of SNARE protein Ykt6 is required for lysosomal hydrolase trafficking.</strong> <em>J Biochem. 2021 Apr 18;169(3):363-370. doi: 10.1093/jb/mvaa111.</em></li>
+ 				</ol>
+	      	<p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
+          <h3>Scholarship and Fund</h3>
+          <div class="table-responsive">
+
+	      		<table>
+						<thead>
+						   <tr>
+						 		<th>Name</th>
+						      <th>Sponsor</th>
+						      <th>Type</th>
+						      <th>Duration</th>
+						   </tr>
+						</thead>
+						<tbody>
+
+              <tr>
+                 <td>Master Study</td>
+                 <td>Korean Education Agency</td>
+                 <td>500 USD/month</td>
+                 <td>2009-2011</td>
+              </tr>
+						   <tr>
+						      <td>MEXT scholarship</td>
+						      <td>Japan Government</td>
+						      <td>Full, 1,500 USD/month</td>
+						      <td>2014-2018</td>
+						   </tr>
+						   <tr>
+						      <td>Grant-in-Aid for Young Scientists (A)</td>
+						      <td>Japan Government</td>
+						      <td>5,000,000 JPY</td>
+						      <td>2020-2022</td>
+						   </tr>
+						</tbody>
+				   </table>
+
+	      	</div>
+
+          <h3>Profile Referees</h3>
+          <ol>
+            <li>Database of Grants-in-Aid for Scientific Research (<a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-20K16140/">link</a>)</li>
+            <li>Japanese researcher Network - researchmap (<a href="https://researchmap.jp/anhtd/?lang=english">link</a>)</li>
+            <li>Google Scholar (<a href="https://scholar.google.com/citations?user=wioq4y0AAAAJ&hl=ja&oi=ao">link</a>)</li>
+          </ol>
+
+	      </div>
+
+	   </div> <!-- end row -->
+
+
+	</section> <!-- end styles -->
+
+
+  <!-- contact
+   ================================================== -->
+   <section id="contact">
+
+      <div class="overlay"></div>
+
+		<div class="row narrow section-intro">
+   		<div class="col-twelve">
+   			<h3 class="animate-this">Contact</h3>
+
+   		</div>
+   	</div> <!-- end section-intro -->
+
+    <div class="row contact-info">
+
+   		<div class="col-four tab-full">
+   			<h5 class="animate-this">Where to find me</h5>
+
+   			<p class="animate-this">
+            2204 Brimley Rd Scarborough,<br>
+            ON M1S 2B5<br>
+            Canada
+            </p>
+   		</div> <!-- end col-four -->
+
+   		<div class="col-four tab-full collapse">
+   			<h5 class="animate-this">Email Me At</h5>
+
+   			<p class="animate-this">
+   				trinhda (at) tohoku.ac.jp<br>
+			   	c0791920 (at) mylambton.ca
+			   </p>
+   		</div> <!-- end col-four -->
+
+   		<div class="col-four tab-full">
+   			<h5 class="animate-this">Call Me At</h5>
+
+   			<p class="animate-this">
+   				Japan: (+81) 80 6058 2305<br>
+			   	Canada: (+1) ddmmmmm<br>
+			   </p>
+   		</div> <!-- end col-four -->
+
+   	</div> <!-- end row contact-info -->
+
+	</section> <!-- end contact -->
+
+
+	<!-- footer
+   ================================================== -->
+	<footer>
+     	<div class="row">
+
+     		<div class="col-twelve tab-full social">
+     			<ul class="footer-social">
+            <li><a href="https://www.linkedin.com/in/trinh-anh-72839a50/">LinkedIn</a></li>
+			      <li><a href="https://twitter.com/tdamcb">Twitter</a></li>
+			      <li><a href="https://github.com/tdavn">Github</a></li>
+			      <li><a href="https://researchmap.jp/anhtd">Researchmap</a></li>
+			   </ul>
+	      </div>
+
+      	<div class="col-twelve tab-full">
+	      	<div class="copyright">
+		        	<span>Trinh DA 2021. Inspired by Howdy©</span>
+		      </div>
+	      </div>
+
+      </div> <!-- end row -->
+
+      <div id="go-top">
+		   <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-UpArrow"></i></a>
+		</div>
+   </footer>
+
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="{% static 'homepage/js/jquery-2.1.3.min.js' %}"></script>
+   <script src="{% static 'homepage/js/plugins.js' %}"></script>
+   <script src="{% static 'homepage/js/main.js' %}"></script>
+
+</body>
+
+</html>

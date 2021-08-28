@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+{% load static %}
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Small GTPase research</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="{% static 'homepage/css/base.css' %}">
+   <link rel="stylesheet" href="{% static 'homepage/css/vendor.css' %}">
+   <link rel="stylesheet" href="{% static 'homepage/css/main.css' %}">
+
+   <style type="text/css" media="screen">
+   	#styles {
+   		background: white;
+   		padding-top: 12rem;
+   		padding-bottom: 12rem;
+   	}
+   </style>
+
+   <!-- script
+   ================================================== -->
+   <script src="{% static 'homepage/js/modernizr.js' %}"></script>
+ 	 <script src="{% static 'homepage/js/pace.min.js' %}"></script>
+
+   <!-- favicons
+	================================================== -->
+  <link rel="shortcut icon" href="{% static 'homepage/favicon.ico' %}" type="image/x-icon">
+	<link rel="icon" href="{% static 'homepage/favicon.ico' %}" type="image/x-icon">
+
+</head>
+
+
+<body id="top">
+
+	<!-- header
+   ================================================== -->
+   <header>
+
+   	<div class="header-logo">
+	      <a href="{% url 'homepage:home_id' %}">Trinh DA</a>
+	   </div>
+
+		<a id="header-menu-trigger" href="#0">
+		 	<span class="header-menu-text">Menu</span>
+		  	<span class="header-menu-icon"></span>
+		</a>
+
+		<nav id="menu-nav-wrap">
+
+			<a href="#0" class="close-button" title="close"><span>Close</span></a>
+
+	   	<h3>Trinh DA</h3>
+
+      <ul class="nav-list">
+				<li class="current"><a href="{% url 'homepage:home_id' %}" title="">Home</a></li>
+				<li><a href="{% url 'blg_index' %}" title="">Blog</a></li>
+        <li class="has-children">
+            <a href="{% url 'homepage:portfolio1' %}" title="">Portfolio</a>
+            <ul class="sub-menu">
+            <li><a href="{% url 'homepage:ing4' %}">ING4</a></li>
+            <li><a href="{% url 'homepage:nanobody' %}">Nanobody</a></li>
+            <li><a href="{% url 'homepage:trichostatin' %}">Cancer drug</a></li>
+            <li><a href="{% url 'homepage:netosis' %}">NETosis</a></li>
+            <li><a href="{% url 'homepage:ggtpase3' %}">GGTase</a></li>
+            <li><a href="{% url 'homepage:ralgap' %}">Ral GAP</a></li>
+            </ul>
+        </li>
+			</ul>
+
+			<ul class="header-social-list">
+	         <li>
+	         	<a href="https://twitter.com/tdamcb"><i class="fa fa-twitter"></i></a>
+	         </li>
+	      </ul>
+
+		</nav>  <!-- end #menu-nav-wrap -->
+
+	</header> <!-- end header -->
+
+
+   <!-- home
+   ================================================== -->
+   <section id="home_portfolio">
+
+   	<div class="overlay"></div><div class="gradient-overlay"></div>
+
+
+
+		<!-- <a href="#about" class="scroll-icon smoothscroll">
+		   <span class="icon-DownArrow"></span>
+		</a> -->
+
+   </section> <!-- end home -->
+
+   <!-- styles
+   ================================================== -->
+	<section id="styles">
+
+		<div class="row narrow add-bottom text-center">
+
+   		<div class="col-twelve tab-full">
+
+   			<h1>Ral GTPase–activating protein regulates the malignancy of pancreatic ductal adenocarcinoma</h1>
+
+   			<p class="lead">
+          The small GTPases RalA and RalB are members of the Ras family and activated downstream of Ras. Ral proteins are found in GTP-bound active and GDP-bound inactive forms. The activation process is executed by guanine nucleotide exchange factors, while inactivation is mediated by GTPase-activating proteins (GAPs). RalGAPs are complexes that consist of a catalytic α1 or α2 subunit together with a common β subunit. Several reports implicate the importance of Ral in pancreatic ductal adenocarcinoma (PDAC). However, there are few reports on the relationship between levels of RalGAP expression and malignancy in PDAC. We generated RalGAPβ-deficient PDAC cells by CRISPR-Cas9 genome editing to investigate how increased Ral activity affects malignant phenotypes of PDAC cells.
+        </p>
+
+   		</div>
+        <p><abbr>See full at:</abbr><a href="https://onlinelibrary.wiley.com/doi/10.1111/cas.14970"> Wiley Online Library</a></p>
+    </div>
+
+    <div class="row">
+
+     		<div class="col-six tab-full">
+
+		     	<h3>Ral activity is negatively regulated by RalGAPs</h3>
+          <p><img src="{% static 'homepage/images/ING4_Fig1.png' %}"></p>
+		        <p><a href="#"><img width="120" height="120" class="pull-left" alt="sample-image" src="{% static 'homepage/images/sample-image.jpg' %}"></a>
+		  		      We examined the level of expression and activity of Ral in six PDAC cell lines. Total RalA protein levels were similar in all six lines, whereas RalB levels were higher in AsPC-1, BxPC-3, SUIT-2, and SW-1990 cells and very low in PANC-1 and MIA PaCa-2 cells shown by Western blotting.
+	 			    </p>
+
+	      </div>
+
+	      <div class="col-six tab-full">
+
+	         <h3>RalGAPβ deficiency decreases expression of RalGAPα1 and RalGAPα2 and increases RalA and RalB activity</h3>
+           <p><img src="{% static 'homepage/images/Ing4-Fig2.png' %}"></p>
+		      <p class="drop-cap">
+            We generated RalGAPβ-deficient PANC-1 and MIA PaCa-2 clonal cell lines using the CRISPR/Cas9 system (Figure S1A). Genetic deletion of RalGAPβ was confirmed by genomic sequencing and Western blotting.
+				  </p>
+
+			   </div>
+
+		</div> <!-- end row -->
+
+	</section> <!-- end styles -->
+
+
+	<!-- contact
+   ================================================== -->
+   <section id="contact">
+
+      <div class="overlay"></div>
+
+		<div class="row narrow section-intro">
+   		<div class="col-twelve">
+   			<h3 class="animate-this">Contact</h3>
+
+   		</div>
+   	</div> <!-- end section-intro -->
+
+    <div class="row contact-info">
+
+   		<div class="col-four tab-full">
+   			<h5 class="animate-this">Where to find me</h5>
+
+   			<p class="animate-this">
+            2204 Brimley Rd Scarborough,<br>
+            ON M1S 2B5<br>
+            Canada
+            </p>
+   		</div> <!-- end col-four -->
+
+   		<div class="col-four tab-full collapse">
+   			<h5 class="animate-this">Email Me At</h5>
+
+   			<p class="animate-this">
+   				trinhda (at) tohoku.ac.jp<br>
+			   	c0791920 (at) mylambton.ca
+			   </p>
+   		</div> <!-- end col-four -->
+
+   		<div class="col-four tab-full">
+   			<h5 class="animate-this">Call Me At</h5>
+
+   			<p class="animate-this">
+   				Japan: (+81) 80 6058 2305<br>
+			   	Canada: (+1) ddmmmmm<br>
+			   </p>
+   		</div> <!-- end col-four -->
+
+   	</div> <!-- end row contact-info -->
+
+	</section> <!-- end contact -->
+
+
+	<!-- footer
+   ================================================== -->
+	<footer>
+     	<div class="row">
+
+     		<div class="col-twelve tab-full social">
+     			<ul class="footer-social">
+            <li><a href="https://www.linkedin.com/in/trinh-anh-72839a50/">LinkedIn</a></li>
+			      <li><a href="https://twitter.com/tdamcb">Twitter</a></li>
+			      <li><a href="https://github.com/tdavn">Github</a></li>
+			      <li><a href="https://researchmap.jp/anhtd">Researchmap</a></li>
+			   </ul>
+	      </div>
+
+      	<div class="col-twelve tab-full">
+	      	<div class="copyright">
+		        	<span>Trinh DA 2021. Inspired by Howdy©</span>
+		      </div>
+	      </div>
+
+      </div> <!-- end row -->
+
+      <div id="go-top">
+		   <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-UpArrow"></i></a>
+		</div>
+   </footer>
+
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="{% static 'homepage/js/jquery-2.1.3.min.js' %}"></script>
+   <script src="{% static 'homepage/js/plugins.js' %}"></script>
+   <script src="{% static 'homepage/js/main.js' %}"></script>
+
+</body>
+
+</html>
