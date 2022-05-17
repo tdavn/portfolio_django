@@ -1,12 +1,9 @@
 blog/__pycache__/
 
-blog/migrations/
-
 hompage/__pycache__/
 
-hompage/migrations/
-
 *.sqlite3
+.credentials
 portfolio/settings.py
 
 portfolio/

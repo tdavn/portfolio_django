@@ -1376,6 +1376,12 @@ header .header-logo a {
 	transition: all 0.5s ease-in-out;
 }
 
+header p {
+	color: white;
+	text-align: left;
+	font-style: italic;
+	font-size: 15px;
+}
 /* -------------------------------------------------------------------
  * menu trigger - (_layout.css)
  * ------------------------------------------------------------------- */
@@ -1638,7 +1644,7 @@ header .header-logo a {
 	background: #151515;
 	width: 100%;
 	height: 100%;
-	background-image: url(../images/intro-bg.jpg);
+	background-image: url(../images/intro-bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -3114,7 +3120,7 @@ footer .footer-social {
 	list-style: none;
 	display: inline-block;
 	margin-left: 0;
-	margin-bottom: 9rem;
+	margin-bottom: 2rem;
 }
 
 footer .footer-social li {
@@ -3127,12 +3133,12 @@ footer .footer-social li {
 
 footer .footer-social li a,
 footer .footer-social li a:visited {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(0, 0, 255, 0.5);
 }
 
 footer .footer-social li a:hover,
 footer .footer-social li a:focus {
-	color: #FFFFFF;
+	color: #191919;
 }
 
 footer .footer-social li:last-child {
