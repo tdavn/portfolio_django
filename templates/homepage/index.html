@@ -44,7 +44,7 @@
    <header>
 
    	    <div class="header-logo">
-  	      <a href="{% url 'homepage:home_id' %}">Trinh DA</a>
+  	      <a href="{% url 'home_id' %}">Trinh DA</a>
   	      <p>Keep active <br>learn a new thing</p>
 	      </div>
 
@@ -384,7 +384,7 @@
    			<h3 class="animate-this">Portfolio</h3>
 	   		<h1 class="animate-this">My Work Updates.</h1>
 
-	   		<p class="lead animate-this">Almost works present here come up during my self-study, some from study time at Lambton College.  <abbr> <!-- <a href="{% url 'homepage:portfolio1' %}">See All my works</a></abbr></p> --> <a href="#">See All my works</a></abbr></p>
+	   		<p class="lead animate-this">Almost works present here come up during my self-study, some from study time at Lambton College.  <abbr> <!-- <a href="{% url 'portfolio1' %}">See All my works</a></abbr></p> --> <a href="#">See All my works</a></abbr></p>
    		</div>
    	</div> <!-- end row section-intro -->
 
@@ -411,7 +411,7 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" action="{% url 'homepage:home_id' %}" enctype='multipart/form-data'>
+            <form name="contactForm" id="contactForm" method="post" action="{% url 'home_id' %}" enctype='multipart/form-data'>
                 {% csrf_token %}
 
                   <div class="form-field animate-this">
@@ -452,8 +452,8 @@
    			<h5 class="animate-this">Where to find me</h5>
 
    			<p class="animate-this">
-            Toronto City<br>
-            ON, M4S 2H4<br>
+            Toronto <br>
+            Ontario, M4P 5E3 <br>
             Canada
             </p>
    		</div> <!-- end col-four -->
@@ -462,7 +462,7 @@
    			<h5 class="animate-this">Email Me At</h5>
 
    			<p class="animate-this">
-   				tdamcb (at) gmail.com<br>
+   				<br>
 			   	c0791920 (at) mylambton.ca
 			   </p>
    		</div> <!-- end col-four -->
@@ -471,7 +471,7 @@
    			<h5 class="animate-this">Call Me At</h5>
 
    			<p class="animate-this">
-   				Japan: (+81) 80 6058 2305<br>
+   				
 			   	Canada: (+1) 647-765-6148<br>
 			   </p>
    		</div> <!-- end col-four -->

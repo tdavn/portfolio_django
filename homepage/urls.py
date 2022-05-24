@@ -2,7 +2,6 @@ from django.urls import path
 from .views import HompageView, PortfolioView, NanobodyView
 from .views import TrichostatinView, NetosisView, Ing4View, Ggtpase3View, RalgapView
 
-app_name = 'homepage'
 
 urlpatterns = [
     path('', HompageView.as_view(), name='home_id'),

@@ -6,7 +6,7 @@ hompage/__pycache__/
 .credentials
 portfolio/settings.py
 
-portfolio/
+portfolio/__pycache__/
 
 # Django #
 *.log
