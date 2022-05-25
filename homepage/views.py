@@ -1,24 +1,43 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from .models import ContactMessage
+from .forms import ContactForm
 
 # Create your views here.
 
-class HompageView(TemplateView):
-    '''Display homepage'''
-    template_name = 'homepage/index.html'
+# class HompageView(TemplateView):
+#     '''Display homepage'''
+#     template_name = 'homepage/index.html'
 
-    def post(self, request):
-        info = self.request.POST
-        ContactMessage.objects.create(
-        name = info['name'],
-        email = info['email'],
-        message = info['message']
-        )
-        context = {
-        'temp_mes': 'Your message has been recored. Thank you!',
-        }
-        return render(request, self.template_name, context)
+#     def post(self, request):
+#         info = self.request.POST
+#         ContactMessage.objects.create(
+#         name = info['name'],
+#         email = info['email'],
+#         message = info['message']
+#         )
+#         context = {
+#         'temp_mes': 'Your message has been recored. Thank you!',
+#         }
+#         return render(request, self.template_name, context)
+
+def idxview(request):
+    if request.method == 'POST':
+        filled_form = ContactForm(request.POST)
+        if filled_form.is_valid():
+            filled_form.save()
+            note = f"Thank you, {filled_form.cleaned_data['name']}. Your message was recorded."
+            filled_form = ContactForm()
+            return render(request, 'homepage/index.html', {'contact_form': filled_form, 'note': note})
+        else:
+            note = 'Check your message over. Thanks.'
+
+            return render(request, 'homepage/index.html', {'contact_form': filled_form, 'note': note})
+    
+    else:
+        form = ContactForm()
+        return render(request, 'homepage/index.html', {'contact_form': form})
+
 
 
 class PortfolioView(TemplateView):
