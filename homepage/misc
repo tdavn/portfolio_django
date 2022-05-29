@@ -1,0 +1,23 @@
+            <form name="contactForm" id="contactForm" method="post" action="{% url 'home_id' %}" enctype='multipart/form-data'>
+                {% csrf_token %}
+
+                  <div class="form-field animate-this">
+ 						             <input name="name" type="text" id="name" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field animate-this">
+	      			          <input name="email" type="email" id="email" placeholder="Email" value="" required="">
+	               </div>
+                  <!-- <div class="form-field animate-this">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div> -->
+                  <div class="form-field animate-this">
+	                 	<textarea name="message" id="message" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>
+
+                  <div class="form-field animate-this">
+                     <button class="submitform">Submit</button>
+
+                  </div>
+
+
+      		</form>
