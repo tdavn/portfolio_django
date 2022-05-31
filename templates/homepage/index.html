@@ -123,86 +123,6 @@
    </section> <!-- end home -->
 
 
-   <!-- about
-   ================================================== -->
-   <section id="about">
-
-   	<div class="about-profile-bg"></div>
-
-   	<div class="about-wrap">
-
-   		<div class="about-profile">
-
-   			<div class="about-profile-bg"></div>
-
-				<div class="intro">
-					<h3 class="animate-this">About</h3>
-	   			<h1 class="animate-this">Quō vādis?</h1>
-
-	   			<p class="lead animate-this">"Quō vādis?" - the latin phrase of "Where are you going ?". If not ready to die for what I believe in, how to say others.</p>
-				</div>
-
-   			<p class="animate-this">
-   			As a "traditional" researcher for years, I later realized that I repeated myself. Day by day I did the same work while the world out there was changing so quickly.I couldn't remain dormant. I need to keep learning. I did think of computer science, think of my hobby of web building with Drupal CMS. Basically, I don't even have a CS degree. And nearly everything I learned about AI/ML and web development was all be myself. I'm my own personal teacher, with references from books, youtube on other internet sources. The more I have learn about Python, JavaScript, other languages and their scripts, the more surprised feeling I got. I am happy with this new start.
-   			</p>
-
-   			<p>
-   				<a href="#contact" class="button full-width animate-this smoothscroll">Contact Me</a>
-   				<a href="{% static 'homepage/files/cv.pdf' %}" download="" class="button button-primary full-width animate-this">Download CV</a>
-   			</p>
-
-   		</div> <!-- end about-profile  -->
-
-   		<div class="about-services">
-
-				<div class="intro">
-	   			<h3 class="animate-this">Professions</h3>
-	   			<h1 class="animate-this">What I Do.</h1>
-
-	   			<p class="lead animate-this">Spent years in the field of life science. I am exploring about programing, AI/ML and web development with all curiosity and dedication of a scientist.</p>
-   			</div>
-
-   			<ul class="services">
-
-   				<li class="item-photography animate-this">
-   					<div class="icon-wrap">
-   						<i class="icon-Statistics"></i>
-   					</div>
-   					<div class="service-item">
-   						<h4>AI/ML</h4>
-   						<p>I am keen on learning AI/ML algorithms to exploit numerous available databases in life science, such as Uniprot, Genebank ect..
-   						</p>
-   					</div>
-   				</li>
-
-   				<li class="item-webdesign animate-this">
-   					<div class="icon-wrap">
-   						<i class="icon-HTML"></i>
-   					</div>
-   					<div class="service-item">
-   						<h4>Web Development</h4>
-   						<p>One of my hobbies is analysing and writing source codes of websites and blogs. I like using Python for backend because of its strong support for data analytics. Now I am enjoying developing APIs and web with Django.</p>
-   					</div>
-   				</li>
-
-   				<li class="item-uiux animate-this">
-   					<div class="icon-wrap">
-   						<i class="icon-Checked"></i>
-   					</div>
-   					<div class="service-item">
-   						<h4>Programing</h4>
-   						<p>I use Python / Javascript or both based on projects. Python for AI/ML projects and works on Biopython and Web back-end development. Javascript, with Html and Css ar for Front-end development.
-   						</p>
-   					</div>
-   				</li>
-
-   			</ul>
-
-   		</div> <!-- end about-services  -->
-
-   	</div> <!-- end about-wrap  -->
-
-   </section> <!-- end about -->
 
 
    <!-- about
@@ -214,44 +134,129 @@
 
    	<div class="row wide">
    		<div class="col-skills">
-
+			
    			<div class="section-intro">
-   			    <h3 class="animate-this">Skills in AI/ML field</h3>
+				<h1>Skills</h1>
+   			    <h3 class="animate-this">Programing</h3>
    			</div>
-
-   			<ul class="skill-bars">
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent60"><span>60%</span></div>
-				   	<strong>Python</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent40"><span>40%</span></div>
-				   	<strong>JavaScript</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent50"><span>50%</span></div>
-				   	<strong>HTML & CSS</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>ML</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Deep Learning</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>Django</strong>
-				   </li>
-				</ul>
+			   <div class="col-three">
+				   <div class="polaroid">
+					   <img src="{% static 'homepage/images/py-logo.png' %}" alt="python">
+					<p>As a programing language</p>
+				   </div>
+			   </div>
+			   <div class="col-three">
+				<div class="polaroid">
+					<img src="{% static 'homepage/images/js-logo.png' %}" alt="python">
+				 <p>JavaScript, the language itself</p>
+				</div>
+			</div>
+			<div class="col-three">
+				<div class="polaroid">
+					<img src="{% static 'homepage/images/web-logo.png' %}" alt="python">
+				 <p>Front-end languages</p>
+				</div>
+			</div>
+			<div class="col-three">
+				<div class="polaroid">
+					<img src="{% static 'homepage/images/img-placeholder.jpg' %}" alt="python">
+				 <p>What's next? Julia ...</p>
+				</div>
+			</div>
 
    		</div> <!-- end col-six -->
    	</div> <!-- end row wide -->
+   	<div class="row wide">
+		<div class="col-skills">
 
+			<div class="section-intro">
+				<h3 class="animate-this">Frameworks & Libraries</h3>
+			</div>
+			<div class="col-three">
+				<div class="polaroid">
+					<img src="{% static 'homepage/images/drf-logo.png' %}" alt="python">
+				 <p>Web platform & restful api framework</p>
+				</div>
+			</div>
+			<div class="col-three">
+			 <div class="polaroid">
+				 <img src="{% static 'homepage/images/ds-logo.png' %}" alt="python">
+			  <p>Data analytics</p>
+			 </div>
+		 </div>
+		 <div class="col-three">
+			 <div class="polaroid">
+				 <img src="{% static 'homepage/images/dl-logo.png' %}" alt="python">
+			  <p>Deep learning</p>
+			 </div>
+		 </div>
+		 <div class="col-three">
+			<div class="polaroid">
+				<img src="{% static 'homepage/images/react-logo.png' %}" alt="python">
+			 <p>For front-end apps</p>
+			</div>
+		</div>
+		</div> <!-- end col-six -->
+	</div> <!-- end row wide -->
    </section> <!-- end skills -->
 
+	<!-- portfolio
+   ================================================== -->
+   <section id="portfolio">
 
+	<div class="row narrow section-intro with-bottom-sep">
+		<div class="col-twelve">
+			<!-- <h3 class="animate-this">Portfolio</h3> -->
+			<h1 class="animate-this">My Works</h1>
+
+			<p class="lead animate-this">Several practices in Django, Python, Web dev and Data science.  <abbr> <!-- <a href="{% url 'portfolio1' %}">See All my works</a></abbr></p> --> <a href="#">See All my works</a></abbr></p>
+		</div>
+	</div> <!-- end row section-intro -->
+
+
+	<!-- place holder for portfolio -->
+	<div class="row wide">
+		<div class="col-four">
+			<div class="boxed">
+				<img src="{% static 'homepage/images/banhmi.jpg' %}" alt="python">
+				<h3>Banhmi and Vietnamese Cuisine</h3>
+				<p>A website that allows to perform oders in various forms based on Django form system.</p>
+			</div>
+		</div>
+		<div class="col-four">
+			<div class="boxed">
+				<img src="{% static 'homepage/images/portfolio-placeholder.png' %}" alt="python">
+				<h3>Data analysis</h3>
+				<p>Using Python libraries, Pandas and Matplotlib, to analyse the data of housing price over yeas to prove that the price is associated tightly with economic fluctuation.</p>
+			</div>
+		</div>
+		<div class="col-four">
+			<div class="boxed">
+				<img src="{% static 'homepage/images/tweetanalyzer.jpg' %}" alt="python">
+				<h3>Twitter analyzer</h3>
+				<p>Train a model to analyz semantic meaning from tweets and deploy it to a Django platform.</p>
+			</div>
+		</div>
+	</div>
+	<div class="separator"></div>
+	<div class="row wide">
+		<div class="col-four">
+			<div class="boxed">
+				<img src="{% static 'homepage/images/port.jpg' %}" alt="python">
+				<h3>Portfolio & Personal Blog</h3>
+				<p>This page and the blog are built on Django, and customized with Html, css and JavaScript (sometimes jQuery).
+				</p>
+			</div>
+		</div>
+		<div class="col-eight">
+			<div class="boxed">
+				
+				<h3>My style</h3>
+				<p>In principle, I take advantage of Python in scientific calculation and modeling as the back-end. The Python code and models are then integrated in Django. Django framework, with its built-in classes and restful api partner DRF, in turn transfers to users' interface, which is built with Html, JavaScript and CSS. Variables, responses among layers are ensured to hook together in a smooth way via amazingly versatile and powerful JavaScript. <abbr><a href="#">See All my works</a></abbr></p></p>
+			</div>
+		</div>
+		
+	</div>
    <!-- credentials
    ================================================== -->
    <section id="credentials">
@@ -280,7 +285,7 @@
 	   				<div class="timeline-header">
 	   					<p class="timeframe">Oct 2014 - Sept 2021</p>
 	   					<h3>Tohoku University - Japan</h3>
-	   					<h4>Senior Technician</h4>
+	   					<h4>Laboratory Technician</h4>
 	   				</div>
 	   				<div class="timeline-content">
 
@@ -376,22 +381,87 @@
 
    </section> <!-- end credentials -->
 
-
-	<!-- portfolio
+   <!-- about
    ================================================== -->
-   <section id="portfolio">
+   <section id="about">
 
-   	<div class="row narrow section-intro with-bottom-sep">
-   		<div class="col-twelve">
-   			<h3 class="animate-this">Portfolio</h3>
-	   		<h1 class="animate-this">My Work Updates.</h1>
+	<div class="about-profile-bg"></div>
 
-	   		<p class="lead animate-this">Almost works present here come up during my self-study, some from study time at Lambton College.  <abbr> <!-- <a href="{% url 'portfolio1' %}">See All my works</a></abbr></p> --> <a href="#">See All my works</a></abbr></p>
-   		</div>
-   	</div> <!-- end row section-intro -->
+	<div class="about-wrap">
 
+		<div class="about-profile">
 
-<!-- place holder for portfolio -->
+			<div class="about-profile-bg"></div>
+
+			 <div class="intro">
+				 <h3 class="animate-this">About</h3>
+				<h1 class="animate-this">Quō vādis?</h1>
+
+				<p class="lead animate-this">"Quō vādis?" - the latin phrase of "Where are you going ?". A story we dare to die for our belief.</p>
+			 </div>
+
+			<p class="animate-this">
+			As a "traditional" researcher for years, I later realized that I repeated myself. Day by day I did the same work while the world out there was changing so quickly. I couldn't remain dormant. I need to keep learning. I did think of computer science, think of my hobby of web building with Drupal CMS. Basically, I don't even have a CS degree. And nearly everything I learned about AI/ML and web development was all be myself. I'm my own personal teacher, with references from books, youtube on other internet sources. The more I have learn about Python, JavaScript, other languages and their scripts, the more surprised feeling I got. I am happy with this new start.
+			</p>
+
+			<p>
+				<a href="#contact" class="button full-width animate-this smoothscroll">Contact Me</a>
+				<a href="{% static 'homepage/files/cv.pdf' %}" download="" class="button button-primary full-width animate-this">Download CV</a>
+			</p>
+
+		</div> <!-- end about-profile  -->
+
+		<div class="about-services">
+
+			 <div class="intro">
+				<h3 class="animate-this">Professions</h3>
+				<h1 class="animate-this">What I Do.</h1>
+
+				<p class="lead animate-this">Spent years in the field of life science. I am exploring about programing, AI/ML and web development with all curiosity and dedication of a scientist.</p>
+			</div>
+
+			<ul class="services">
+
+				<li class="item-photography animate-this">
+					<div class="icon-wrap">
+						<i class="icon-Statistics"></i>
+					</div>
+					<div class="service-item">
+						<h4>AI/ML</h4>
+						<p>I am keen on learning AI/ML algorithms to exploit numerous available databases in life science, such as Uniprot, Genebank ect..
+						</p>
+					</div>
+				</li>
+
+				<li class="item-webdesign animate-this">
+					<div class="icon-wrap">
+						<i class="icon-HTML"></i>
+					</div>
+					<div class="service-item">
+						<h4>Web Development</h4>
+						<p>One of my hobbies is analysing and writing source codes of websites and blogs. I like using Python for backend because of its strong support for data analytics. Now I am enjoying developing APIs and web with Django.</p>
+					</div>
+				</li>
+
+				<li class="item-uiux animate-this">
+					<div class="icon-wrap">
+						<i class="icon-Checked"></i>
+					</div>
+					<div class="service-item">
+						<h4>Programing</h4>
+						<p>I use Python / Javascript or both based on projects. Python for AI/ML projects and works on Biopython and Web back-end development. Javascript, with Html and Css ar for Front-end development.
+						</p>
+					</div>
+				</li>
+
+			</ul>
+
+		</div> <!-- end about-services  -->
+
+	</div> <!-- end about-wrap  -->
+
+</section> <!-- end about -->
+
 
 
 	<!-- contact
@@ -510,16 +580,9 @@
 
      		<div class="col-twelve tab-full social">
      			<ul class="footer-social">
-			      <li><a href="https://www.linkedin.com/in/trinh-anh-72839a50/">LinkedIn</a></li>
-			      <li><a href="https://twitter.com/tdamcb">Twitter</a></li>
-			      <li><a href="https://github.com/tdavn">Github</a></li>
+			      <li><a href="https://www.linkedin.com/in/da-trinh/">LinkedIn</a></li>
+			      <li><a href="https://github.com/tdavn">GitHub</a></li>
 			   </ul>
-	      </div>
-
-      	<div class="col-twelve tab-full">
-	      	<div class="copyright">
-		        	<span>Trinh DA 2021. Inspired by Howdy©</span>
-		      </div>
 	      </div>
 
       </div> <!-- end row -->
