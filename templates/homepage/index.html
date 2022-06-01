@@ -64,16 +64,17 @@
 
 			<ul class="nav-list">
 				<li class="current"><a class="smoothscroll" href="#home" title="">Home</a></li>
-				<li><a class="smoothscroll" href="#about" title="">About</a></li>
 				<li><a class="smoothscroll" href="#skills" title="">Skills</a></li>
-				<li><a class="smoothscroll" href="#credentials" title="">Experience</a></li>
 				<li><a class="smoothscroll" href="#portfolio" title="">Works</a></li>
+				<li><a class="smoothscroll" href="#credentials" title="">Credentials</a></li>
+				<li><a class="smoothscroll" href="#about" title="">About</a></li>
 				<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
 			</ul>
 
 			<ul class="header-social-list">
         <li>
-         <a href="https://twitter.com/tdamcb"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.linkedin.com/in/da-trinh/"><i class="fa fa-linkedin"></i></a>
+			<a href="https://twitter.com/tdamcb"><i class="fa fa-twitter"></i></a>
         </li>
 	    </ul>
 
@@ -104,10 +105,16 @@
 				  			</h3>
 
 							<ul class="home-section-links">
-								<li class="animate-intro">More <a href="#about" class="smoothscroll">About Me</a></li>
 								<li class="animate-intro">View <a href="#portfolio" class="smoothscroll">My Works</a></li>
-								<li class="animate-intro">Leave <a href="#contact" class="smoothscroll">A Message</a></li>
 								<li class="animate-intro">See <a href="{% url 'blg_index' %}" target="_blank">My Blog</a></li>
+								<li class="animate-intro">Leave <a href="#contact" class="smoothscroll">A Message</a></li>
+								<li class="animate-intro">More <a href="#about" class="smoothscroll">About Me</a></li>
+								<li class="animate-intro"> | Meet me at: </li>
+								<li class="animate-intro">
+									<a href="https://www.linkedin.com/in/da-trinh/"><i class="fa fa-linkedin"></i></a> &nbsp;
+									<a href="https://twitter.com/tdamcb"><i class="fa fa-twitter"></i></a>
+								</li>
+
 							</ul>
 
 			  			</div> <!-- end home-bottom-text -->
@@ -116,7 +123,7 @@
 		   </div> <!-- end home-content-tablecell -->
 		</div> <!-- end home-content-table -->
 
-		<a href="#about" class="scroll-icon smoothscroll">
+		<a href="#skills" class="scroll-icon smoothscroll">
 		   <span class="icon-DownArrow"></span>
 		</a>
 
@@ -142,25 +149,25 @@
 			   <div class="col-three">
 				   <div class="polaroid">
 					   <img src="{% static 'homepage/images/py-logo.png' %}" alt="python">
-					<p>As a programing language</p>
+					<p>Python</p>
 				   </div>
 			   </div>
 			   <div class="col-three">
 				<div class="polaroid">
-					<img src="{% static 'homepage/images/js-logo.png' %}" alt="python">
+					<img src="{% static 'homepage/images/js-logo.png' %}" alt="js">
 				 <p>JavaScript, the language itself</p>
 				</div>
 			</div>
 			<div class="col-three">
 				<div class="polaroid">
-					<img src="{% static 'homepage/images/web-logo.png' %}" alt="python">
+					<img src="{% static 'homepage/images/web-logo.png' %}" alt="frontend">
 				 <p>Front-end languages</p>
 				</div>
 			</div>
 			<div class="col-three">
 				<div class="polaroid">
-					<img src="{% static 'homepage/images/img-placeholder.jpg' %}" alt="python">
-				 <p>What's next? Julia ...</p>
+					<img src="{% static 'homepage/images/sql-logo.png' %}" alt="SQL">
+				 <p>SQL - The database languge</p>
 				</div>
 			</div>
 
@@ -175,7 +182,7 @@
 			<div class="col-three">
 				<div class="polaroid">
 					<img src="{% static 'homepage/images/drf-logo.png' %}" alt="python">
-				 <p>Web platform & restful api framework</p>
+				 <p>Web & restful API framework</p>
 				</div>
 			</div>
 			<div class="col-three">
@@ -198,6 +205,9 @@
 		</div>
 		</div> <!-- end col-six -->
 	</div> <!-- end row wide -->
+	<a href="#portfolio" class="scroll-icon smoothscroll">
+		<span class="icon-DownArrow"></span>
+	</a>
    </section> <!-- end skills -->
 
 	<!-- portfolio
@@ -378,6 +388,10 @@
 	   	</div> <!-- end col-six -->
 
 		</div> <!-- end row wide -->
+
+		<a href="#about" class="scroll-icon smoothscroll">
+			<span class="icon-DownArrow"></span>
+		</a>
 
    </section> <!-- end credentials -->
 
